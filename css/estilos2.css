@@ -1,0 +1,96 @@
+* {
+    font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* HEADER*/
+
+header .menu {
+   background-color: black;
+   opacity: 100%;
+   margin-top: auto;
+   padding: 25px 0;
+}
+
+header .menu a {
+	color: 	rgb(131, 201, 61);
+    font-size: 20px;
+	font-weight: 300;
+	display: inline-block;
+	margin: 10px 15px;
+	text-decoration: none;
+	text-align: center;
+	position: relative;
+	right: -200px;
+	padding: 5px 15px;
+	border-radius: 30px;
+}
+
+header .menu a:hover {
+	background-color:rgb(131, 201, 61);
+	color: #fff;
+}
+
+
+/* ----- ----- FOOTER ----- ----- */
+
+footer{
+    background-color:rgb(131, 201, 61);
+    margin: 15px 0;
+    padding-top: 30px;
+	padding-bottom: 30px;
+}
+footer h3.titulo {
+	color: black;
+	font-size: 130%;
+	padding: 15px 0;
+    margin: 5px 5px;
+    left: 10%;
+    position: relative;
+}
+
+footer div.contactame img {
+  top: 50%;
+  display: inline-block;
+  margin: 9px 1px;
+  left: 10%;
+  position: relative;
+  vertical-align: middle;
+      /*padding: 5px 0;*/
+}
+
+
+footer div.contactame p {
+    top: 10%;
+	display: inline-block;
+    margin: 9px 1px;
+    left: 10%;
+    position: relative;
+    vertical-align: middle;
+    /*padding: 5px 0;*/
+}
+
+footer div.redes-sociales {
+	text-align: center;
+    align-items: center;
+    vertical-align: middle;
+    padding: 3px 0;
+
+}
+
+
+/*footer div.telefono{
+    display: grid;
+    grid-template-columns: repeat(2,40%);
+    grid-gap: 10px;  
+    left: 10%; 
+}
+
+footer div.wssp{
+    display: grid;
+    grid-template-columns: repeat(2,40%);
+    grid-gap: 10px;   
+    left: 10%; 
+}*/

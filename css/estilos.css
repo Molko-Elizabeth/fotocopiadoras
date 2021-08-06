@@ -1,0 +1,186 @@
+* {
+    font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* HEADER*/
+
+header .menu {
+   background-color: black;
+   opacity: 100%;
+   margin-top: auto;
+   padding: 25px 0;
+}
+
+header .menu a {
+	color: 	rgb(131, 201, 61);
+    font-size: 20px;
+	font-weight: 300;
+	display: inline-block;
+	margin: 10px 15px;
+	text-decoration: none;
+	text-align: center;
+	position: relative;
+	right: -200px;
+	padding: 5px 15px;
+	border-radius: 30px;
+}
+
+/*header .contenedor.redes img {
+	display: inline-block;
+	/*margin: 40px 20px;
+	text-decoration: none;
+	/*right: -260px;
+	z-index: 10;
+}*/
+
+header .menu a:hover {
+	background-color:rgb(131, 201, 61);
+	color: #fff;
+}
+
+.encabezado-img {
+  background-image: url(../img/fotocopiadora.png);
+  height:500px;
+  background-size: cover;
+  display: flex;
+  color: black;
+  justify-content: right;
+}
+
+.encabezado-img h1 {
+	font-size: 30px;
+	padding: 20px 0 ;
+	text-align: right;
+	right: 100%;
+}
+
+/*header .textos {
+	width: 80%;
+	color: rgb(0, 0, 0);
+	position: absolute;
+	top: 60%;
+    z-index: 10;
+    text-align: right;
+	
+}
+
+header .foto {
+    margin-top: -260px;
+	z-index: -10;
+	position: relative;
+}*/
+
+
+.main .sobre-nosotros .contenedor {
+	overflow: visible;
+	position: relative;
+	/*margin-top: -400px;*/
+	top: 80%;
+	padding: 30px 0;
+}
+
+.main .sobre-nosotros h3 {
+   color: rgb(131, 201, 61);
+   text-align: center;
+   font-size: 140%;
+   padding: 30px 0;
+   justify-content: center;
+   align-items: center;
+}
+
+.main .sobre-nosotros p {
+	color: black;
+	text-align: center;
+	font-size: 100%;
+	margin: 2px;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.contacto  h3.titulo {
+	color: 	rgb(131, 201, 61);
+	text-align: center;
+	font-size: 140%;
+	padding: 30px 0;
+}
+
+.contacto h4 {
+	font-size: 100%;
+	color: 	rgb(131, 201, 61);
+	text-align: left;
+}
+
+.contacto .horarios p{
+    font-size: 100%;
+	left: 90%;
+}
+
+.formulario {
+	font-size: 140%;
+	padding: 30px 0;
+	align-items: center;
+	justify-content: center;
+ }
+
+.formulario h3 {
+	font-size: 140%;
+	color: 	rgb(131, 201, 61);
+	text-align: center;
+} 
+
+/*.formulario label.required {
+	text-align: left;
+}*/
+
+.formulario input#name.input {
+	background-color: rgb(208, 202, 202);
+	color: black;
+	border-radius: 20px;
+	border-color: white;
+	width: 50%;
+	justify-content: center;
+}
+
+.formulario input#email.input {
+	background-color: rgb(208, 202, 202);
+	color: black;
+	border-radius: 20px;
+	border-color: white;
+	width: 50%;
+	font-size: 15px;
+}
+
+.formulario textarea#message.input {
+	background-color: rgb(208, 202, 202);
+	color: black;
+	border-radius: 20px;
+	border-color: white;
+	width: 50%;
+	font-size: 15px;
+}
+
+.formulario .message {
+	color: 	rgb(131, 201, 61);
+}
+
+.formulario input#submit_button {
+	background-color:rgb(131, 201, 61);
+	color: black;
+	font-size: 12px;
+	width: 10%;
+	border-bottom:white;
+	border-radius: 20px;
+}
+
+/* ----- ----- FOOTER ----- ----- */
+footer {
+	background:	rgb(131, 201, 61);
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
