@@ -15,9 +15,9 @@ header .menu {
 }
 
 header .menu a {
-	color: 	rgb(131, 201, 61);
+	color: 	rgb(132, 192, 42);
     font-size: 20px;
-	font-weight: 300;
+	font-weight: 300px;
 	display: inline-block;
 	margin: 10px 15px;
 	text-decoration: none;
@@ -29,68 +29,696 @@ header .menu a {
 }
 
 header .menu a:hover {
-	background-color:rgb(131, 201, 61);
+	background-color:rgb(132, 192, 42);
 	color: #fff;
 }
 
+.redes-sociales{
+	float: right;
+	top: -1200px;
+	margin-top: -75px;
+	margin-right: 100px;
+}
+.redes-sociales a{
+	text-decoration: none;
+	padding-right: 10px;
+}
+.logo{
+	height: 40px;
+	width: 40px;
+}
 
-/* ----- ----- FOOTER ----- ----- */
+/* ----- ----- SECTION ----- ----- */
+
+
+section h3#ALQUILER.titulo {
+ color: rgb(131, 201, 61);
+ text-align: center;
+ margin: 25px 15px;
+ padding: 10px 15px;
+ font-size: 30px;
+ margin-left: 0%;
+}
+
+
+section .contenedor-alquiler {
+  display: grid;
+  grid-template-columns: repeat(3,30%);
+  justify-content:center;
+  grid-gap: 20px;
+  margin-left: 2%;
+  margin-left: 2%;
+  align-content: left;
+  font-size: 15px;
+  text-align: center;
+  margin: 5px 5px ;
+}
+
+section .contenedor-alquiler img {
+	width: 60%;
+	margin: 10px 0px 
+}
+
+
+section h3#PRODUCTOS.titulo {
+	color: rgb(131, 201, 61);
+	text-align: center;
+	margin: 25px 15px;
+	padding: 10px 15px;
+	font-size: 30px;
+}
+
+section .contenedor-productos {
+	display: grid;
+	grid-template-columns: repeat(2,40%);
+	justify-content:center;
+	grid-gap: 60px;
+	margin-left: 2%;
+	margin-left: 2%;
+	align-content: center;
+	font-size: 15px;
+	text-align: center;
+	margin: 10px 5px ;
+}
+  
+ section .contenedor-productos img {
+    width: 60%;
+    margin: 10px 0px 
+  }
+/* ----- ----- COLORCAR PARA BOTON WSSP----- ----- */
+.float{
+		position:fixed;
+		width:60px;
+		height:60px;
+		bottom:40px;
+		right:40px;
+		background-color:#25d366;
+		color:#FFF;
+		border-radius:50px;
+		text-align:center;
+		font-size:30px;
+		box-shadow: 2px 2px 3px #999;
+		z-index:100;
+}
+.float:hover {
+		text-decoration: none;
+		color: #25d366;
+		background-color:#fff;
+}
+	
+.my-float{
+		margin-top:16px;
+	}
+	
+    /* ----- ----- hASTA AQUI COLORCAR PARA BOTON WSSP----- ----- */
 
 footer{
-    background-color:rgb(131, 201, 61);
-    margin: 15px 0;
-    padding-top: 30px;
-	padding-bottom: 30px;
-}
+	background-color:rgb(131, 201, 61);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	}
+
 footer h3.titulo {
 	color: black;
-	font-size: 130%;
-	padding: 15px 0;
-    margin: 5px 5px;
-    left: 10%;
-    position: relative;
-}
-
-footer div.contactame img {
-  top: 50%;
-  display: inline-block;
-  margin: 9px 1px;
-  left: 10%;
-  position: relative;
-  vertical-align: middle;
-      /*padding: 5px 0;*/
-}
-
-
-footer div.contactame p {
-    top: 10%;
+	font-size: 140%;
+	padding: 15px 5px;
+	margin: 5px 5px;
+	left: 10%;
+	position: absolute;
+	}
+	
+div.contactame2 {
 	display: inline-block;
-    margin: 9px 1px;
-    left: 10%;
-    position: relative;
-    vertical-align: middle;
-    /*padding: 5px 0;*/
+	margin-top: 3%;
+	margin-left: 9%;
 }
 
-footer div.redes-sociales {
+div.contactame2 img{
+	display: inline-block;
+	margin-top: 5%;
+	margin-left: 2%;
+	width: 5%;
+}
+div.contactame2 p{
+	display: inline-block;
+	/*margin-top: 2%;*/
+	/*margin-left: 2%;*/
+	font: 80%;
+	vertical-align: 40%;
+}
+
+/*div.wssp {
+	margin-top: 1%;
+	padding-top: 1%;
+
+} */
+div.redes-sociales2 {
+	justify-content: center;
 	text-align: center;
-    align-items: center;
-    vertical-align: middle;
-    padding: 3px 0;
+	margin-bottom: 10px;
+	padding: 5px 0px;
+    left: 50%;
+    }
+		 
+div.redes-sociales2 a {
+	text-decoration: none;
+	padding-right: 20px;
+	text-align: center;
+	}
+img.logo2 {
+	justify-content: center;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+	}
+
+	/* ----- ----- MEDIA QUERIES ----- ----- */ /*RESPONSIVE*/
+@media screen and (max-width: 800px) {
+  
+header .menu {
+	background-color: black;
+	opacity: 100%;
+	margin-top:auto;
+	padding: 5px 0;
+ }
+ 
+ header .menu a {
+	font-size: 7px;
+	font-weight: 100px;
+	display:grid;
+	margin: 5px 5px;
+	text-decoration: none;
+	text-align: left;
+    left: 30%;
+	padding: 3px 3px;
+	border-radius: 30px;
+ }
+
+ header .menu a:hover {
+	 background-color:rgb(132, 192, 42);
+	 color: #fff;
+ }
+ 
+ .redes-sociales{
+	float: left;
+	top: 100px;
+	/*margin-top: -75px;*/
+	margin-left: 55%;
+	text-align: left;
+ }
+ .redes-sociales a{
+	text-decoration: none;
+	padding-left: 10px;
+ }
+ .logo{
+	height: 30px;
+	width: 30px;
+ }
+ 
+ /* ----- ----- SECTION ----- ----- */
+ 
+ section h3#ALQUILER.titulo {
+  color: rgb(131, 201, 61);
+  text-align: center;
+  /*left: 40%;*/
+  margin-left: 30%;
+ /* margin: 10px 0;
+  padding: 5px 15px;*/
+  font-size: 30px;
+ }
+ /* ----- ----- COLORCAR PARA BOTON WSSP----- ----- */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left: 70%;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index:100;
+ }
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+	background-color:#fff;
+ }
+	 
+.my-float{
+	margin-top:16px;
+ }
+	 
+	 /* ----- ----- hASTA AQUI COLORCAR PARA BOTON WSSP----- ----- */
+ 
+ footer{
+	background-color:rgb(131, 201, 61);
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+ 
+ footer h3.titulo {
+	color: black;
+	font-size: 120%;
+	padding: 5px 5px;
+	margin: -10px 20px;
+	left: 10%;
+	position: absolute;
+}
+	 
+ footer div.contactame2 img {
+	/*top: 30%;*/
+	width: 2%;
+	display: inline-block;
+	margin: 14px 0px;
+	left: 10%;
+	padding: 0px;
+	margin-left: 2%;
+	 /*border-bottom: 1px;
+	 border-top: 1px;*/
+	/* position: relative;*/
+}
+	 
+footer div.contactame2 p {
+	/*top: 50%;*/
+	display: inline-block;
+	margin-top: 5%;
+	margin: 0px 9px;
+	left: 10%;
+	padding: 0px;
+	/*vertical-align: middle;*/
+	/*position: relative;*/
+}
+	 
+ div.redes-sociales2 {
+	 justify-content: center;
+	 text-align: center;
+	 margin-bottom: 10px;
+	 padding: 5px 0px;
+	 left: 50%;
+	 }
+		  
+ div.redes-sociales2 a {
+	 text-decoration: none;
+	 padding-right: 20px;
+	 text-align: center;
+	 }
+ img.logo2 {
+	 justify-content: center;
+	 height: 50px;
+	 width: 50px;
+	 text-align: center;
+	 }
+}
+
+	/* ----- ----- MEDIA QUERIES ----- ----- */ /*RESPONSIVE*/
+@media screen and (max-width: 480px) {
+  
+header .menu {
+	background-color: black;
+	opacity: 100%;
+	margin-top:auto;
+	padding: 5px 0;
+ }
+ 
+ header .menu a {
+	font-size: 7px;
+	font-weight: 100px;
+	display:grid;
+	margin: 5px 5px;
+	text-decoration: none;
+	text-align: left;
+    left: 30%;
+	padding: 3px 3px;
+	border-radius: 30px;
+ }
+
+ header .menu a:hover {
+	 background-color:rgb(132, 192, 42);
+	 color: #fff;
+ }
+ 
+ .redes-sociales{
+	float: right;
+	/*top: 100px;*/
+	/*margin-top: -75px;*/
+	margin-left: 46%;
+	text-align: right;
+	position: fixed;
+	
+
+ }
+ .redes-sociales a{
+	text-decoration: none;
+	padding-left: 10px;
+ }
+ .logo{
+	height: 10px;
+	width: 10px;
+ }
+ 
+ /* ----- ----- SECTION ----- ----- */
+ 
+ /*section h3#ALQUILER.titulo {
+  color: rgb(131, 201, 61);
+  text-align: center;
+  /*left: 40%;
+  margin-left: 0%;
+ /* margin: 10px 0;
+  padding: 5px 15px;
+  font-size: 30px;
+ }*/
+ /* ----- ----- COLORCAR PARA BOTON WSSP----- ----- */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left: 65%;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index:100;
+ }
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+	background-color:#fff;
+ }
+	 
+.my-float{
+	margin-top:16px;
+ }
+	 
+	 /* ----- ----- hASTA AQUI COLORCAR PARA BOTON WSSP----- ----- */
+ 
+ footer{
+	background-color:rgb(131, 201, 61);
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+ 
+ footer h3.titulo {
+	color: black;
+	font-size: 120%;
+	padding: 0px 0px;
+	margin: -10px 20px;
+	margin-left: 25%;
+	position: absolute;
+}
+	 
+ footer div.contactame2 img {
+	/*top: 30%;*/
+	width: 4%;
+	display: inline-block;
+	margin: 10px;
+	left: 10%;
+	padding: 0px;
+	margin-left: 22%;
+	 /*border-bottom: 1px;
+	 border-top: 1px;*/
+	/* position: relative;*/
+}
+	 
+footer div.contactame2 p {
+	/*top: 50%;*/
+	display: inline-block;
+	/*margin-top: 5%;*/
+	margin: 0px;
+	margin-left: 0%;
+	/*left: 10%;*/
+	padding: 0px;
+	/*vertical-align: middle;*/
+	/*position: relative;*/
+}
+	 
+ div.redes-sociales2 {
+	 justify-content: center;
+	 text-align: center;
+	 margin-bottom: 10px;
+	 padding: 20px;
+	 left: 50%;
+	 }
+		  
+ div.redes-sociales2 a {
+	 text-decoration: none;
+	 padding-right: 20px;
+	 text-align: center;
+	 }
+ img.logo2 {
+	 justify-content: center;
+	 height: 50px;
+	 width: 50px;
+	 text-align: center;
+	 }
 
 }
 
 
-/*footer div.telefono{
-    display: grid;
-    grid-template-columns: repeat(2,40%);
-    grid-gap: 10px;  
-    left: 10%; 
-}
+@media screen and (max-width: 1440px) {
+  
 
-footer div.wssp{
+    /* ----- ----- SECTION ----- ----- */
+        
+section h3#ALQUILER.titulo {
+	color: rgb(131, 201, 61);
+	text-align: center;
+	margin: 25px 15px;
+	padding: 10px 15px;
+	font-size: 30px;
+   }
+   
+section .contenedor-alquiler {
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    justify-content:center;
+    grid-gap: 20px;
+    margin-left: 2%;
+    margin-left: 2%;
+    align-content: left;
+    font-size: 15px;
+    text-align: center;
+    margin: 5px 5px ;
+  }
+   
+section .contenedor-alquiler img {
+    width: 60%;
+    margin: 10px 0px 
+  }
+   
+   
+section h3#PRODUCTOS.titulo {
+   color: rgb(131, 201, 61);
+   text-align: center;
+   margin: 25px 15px;
+   padding: 10px 15px;
+   font-size: 30px;
+  }
+   
+section .contenedor-productos {
     display: grid;
     grid-template-columns: repeat(2,40%);
-    grid-gap: 10px;   
-    left: 10%; 
-}*/
+    justify-content:center;
+    grid-gap: 60px;
+    margin-left: 2%;
+    margin-left: 2%;
+    align-content: center;
+    font-size: 15px;
+    text-align: center;
+    margin: 10px 5px ;
+  }
+     
+section .contenedor-productos img {
+    width: 60%;
+    margin: 10px 0px 
+  }
+        /* ----- ----- COLORCAR PARA BOTON WSSP----- ----- */
+   
+            /* ----- ----- hASTA AQUI COLORCAR PARA BOTON WSSP----- ----- */
+        
+    footer{
+       background-color:rgb(131, 201, 61);
+       padding-top: 30px;
+       padding-bottom: 30px;
+   }
+        
+    footer h3.titulo {
+       color: black;
+       font-size: 120%;
+       padding: 5px 5px;
+       margin: -10px 20px;
+       left: 10%;
+       position: absolute;
+   }
+        
+    footer div.contactame2 img {
+       /*top: 30%;*/
+       width: 3%;
+       display: inline-block;
+       margin: 14px 0px;
+       left: 10%;
+       padding: 0px;
+       margin-left: 2%;
+        /*border-bottom: 1px;
+        border-top: 1px;*/
+       /* position: relative;*/
+   }
+            
+   footer div.contactame2 p {
+       /*top: 50%;*/
+       display: inline-block;
+       margin-top: 5%;
+       margin: 0px 9px;
+       left: 10%;
+       padding: 0px;
+       /*vertical-align: middle;*/
+       /*position: relative;*/
+   }
+        
+    div.redes-sociales2 {
+       justify-content: center;
+       text-align: center;
+       margin-bottom: 10px;
+       padding: 5px 0px;
+       left: 50%;
+   }
+                 
+    div.redes-sociales2 a {
+       text-decoration: none;
+       padding-right: 20px;
+       text-align: center;
+       }
+   img.logo2 {
+       justify-content: center;
+       height: 50px;
+       width: 50px;
+       text-align: center;
+    }
+   
+@media screen and (max-width: 1000px) {
+  
+header .menu {
+	background-color: black;
+	opacity: 100%;
+	margin-top:auto;
+	padding: 5px 0;
+}
+		 
+header .menu a {
+	font-size: 7px;
+    font-weight: 100px;
+	display:grid;
+	margin: 5px 5px;
+	text-decoration: none;
+	text-align: left;
+	left: 30%;
+	padding: 3px 3px;
+	border-radius: 30px;
+ }
+		
+header .menu a:hover {
+    background-color:rgb(132, 192, 42);
+	color: #fff;
+}
+	
+ /* ----- ----- SECTION ----- ----- */
+		 
+ section h3#ALQUILER.titulo {
+   color: rgb(131, 201, 61);
+   text-align: center;
+		  /*left: 40%;*/
+   margin-left: 30%;
+		 /* margin: 10px 0;
+		  padding: 5px 15px;*/
+  font-size: 30px;
+ }
+		 /* ----- ----- COLORCAR PARA BOTON WSSP----- ----- */
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	left: 70%;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index:100;
+ }
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+	background-color:#fff;
+ }
+			 
+.my-float{
+	margin-top:16px;
+ }
+			 
+	 /* ----- ----- hASTA AQUI COLORCAR PARA BOTON WSSP----- ----- */
+		 
+footer{
+	background-color:rgb(131, 201, 61);
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+		 
+footer h3.titulo {
+	color: black;
+	font-size: 120%;
+	padding: 5px 5px;
+	margin: -10px 20px;
+	left: 10%;
+	position: absolute;
+}
+			 
+footer div.contactame2 img {
+		/*top: 30%;*/
+	width: 2%;
+	display: inline-block;
+	margin: 14px 0px;
+	left: 10%;
+	padding: 0px;
+	margin-left: 2%;
+			 /*border-bottom: 1px;
+			 border-top: 1px;*/
+			/* position: relative;*/
+ }
+			 
+footer div.contactame2 p {
+			/*top: 50%;*/
+	display: inline-block;
+	margin-top: 5%;
+	margin: 0px 9px;
+	left: 10%;
+	padding: 0px;
+			/*vertical-align: middle;*/
+			/*position: relative;*/
+ } 
+			 
+ div.redes-sociales2 {
+    justify-content: center;
+	text-align: center;
+	margin-bottom: 10px;
+	padding: 5px 0px;
+	left: 50%;
+ }
+				  
+ div.redes-sociales2 a {
+    text-decoration: none;
+	padding-right: 20px;
+	text-align: center;
+}
+ img.logo2 {
+    justify-content: center;
+	height: 50px;
+	width: 50px;
+	text-align: center; }
+ }
