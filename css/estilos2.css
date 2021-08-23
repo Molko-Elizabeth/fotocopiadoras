@@ -101,10 +101,29 @@ section .contenedor-productos {
 	margin: 10px 5px ;
 }
   
- section .contenedor-productos img {
+section .contenedor-productos img {
     width: 60%;
     margin: 10px 0px 
   }
+
+section.ayuda h1 {
+	justify-content:  center;
+	margin: 25px 20px;
+	padding: auto;
+	text-align: center;
+	color: rgb(131, 201, 61);
+	font-size: 30px;
+  }
+section div.FAQ {
+   justify-content:  center;
+   margin: 35px 25px;
+   padding: 20px 15px;
+}  
+
+section div.FAQ h3 {
+	padding: 20px 15px ;
+
+}
 /* ----- ----- COLORCAR PARA BOTON WSSP----- ----- */
 .float{
 		position:fixed;
