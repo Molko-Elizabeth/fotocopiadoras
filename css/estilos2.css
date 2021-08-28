@@ -1,43 +1,50 @@
-* {
-    font-family: 'Poppins', sans-serif;
+body {
 	margin: 0;
 	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+*, *::after, *::before {
 	box-sizing: border-box;
 }
-
-/* HEADER*/
-
-header .menu {
-   background-color: black;
-   opacity: 100%;
-   margin-top: auto;
-   padding: 25px 0;
+.wrapper {
+	width: calc(100% - 50px);
+	margin: 0%;
+	padding: 0%;
+	height: 100%;
+	box-sizing: border-box;
+} 
+.close-mobile-menu {
+	display: none;
+	position: fixed;
+	bottom: 5vh;
+	left: 50%;
+	transform: translateX(-50%);
+	color:#84c02a;
+	background: none;
+	border: none;
+	font-size: 2em;
+	z-index: 1000;
 }
-
-header .menu a {
-	color: 	rgb(132, 192, 42);
-    font-size: 20px;
-	font-weight: 300px;
-	display: inline-block;
-	margin: 10px 15px;
-	text-decoration: none;
-	text-align: center;
+nav {
 	position: relative;
-	right: -200px;
-	padding: 5px 15px;
-	border-radius: 30px;
+}  
+.navbar-dark .navbar-nav .nav-link {
+	color: rgba(132, 192, 42);
+}  
+.container .navbar-brand{
+	width: 120px;
+	height: 120px;
 }
-
-header .menu a:hover {
-	background-color:rgb(132, 192, 42);
-	color: #fff;
-}
-
+  .navbar-nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	list-style: none;
+  }
+  
 .redes-sociales{
 	float: right;
-	top: -1200px;
-	margin-top: -75px;
-	margin-right: 100px;
+	margin-top: 0px;
 }
 .redes-sociales a{
 	text-decoration: none;
@@ -46,49 +53,66 @@ header .menu a:hover {
 .logo{
 	height: 40px;
 	width: 40px;
+  }
+.nav-item {
+	margin-left: 60px;}
+	  
+.nav-item a {
+	font-family: 'Poppins', sans-serif;
+	color:#84c02a;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	letter-spacing: 0.1em;
+	padding: 10px;
+	border-bottom: 2px solid transparent;
+}	  
+.nav-item a:hover {
+	background-color: #fff;
+	opacity: 1;
+	border-radius: 30px;
 }
-
-/* ----- ----- SECTION ----- ----- */
-
-
-section h3#ALQUILER.titulo {
- color: rgb(131, 201, 61);
- text-align: center;
- margin: 25px 15px;
- padding: 10px 15px;
- font-size: 30px;
- margin-left: 0%;
+#ALQUILER {
+	color: rgb(131, 201, 61);
+	text-align: center;
+	margin: 25px 15px;
+	padding: 10px 15px;
+	font-size: 30px;
+	margin-left: 0%;
 }
-
-
-section .contenedor-alquiler {
-  display: grid;
-  grid-template-columns: repeat(3,30%);
-  justify-content:center;
-  grid-gap: 20px;
-  margin-left: 2%;
-  margin-left: 2%;
-  align-content: left;
-  font-size: 15px;
-  text-align: center;
-  margin: 5px 5px ;
+.contenedor-alquiler {
+	display: grid;
+	grid-template-columns: repeat(3,30%);
+	justify-content:center;
+	grid-gap: 20px;
+	margin-left: 2%;
+	margin-left: 2%;
+	align-content: left;
+	font-size: 5px;
+	text-align: center;
+	margin: 5px 5px ;
 }
-
-section .contenedor-alquiler img {
-	width: 60%;
+.contenedor-alquiler img{
+	width: 70%;
 	margin: 10px 0px 
 }
-
-
-section h3#PRODUCTOS.titulo {
+.centro img{
+	padding-top: -1px;
+	width: 64%;
+}
+.centro p{
+	padding-top: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#PRODUCTOS{
 	color: rgb(131, 201, 61);
 	text-align: center;
 	margin: 25px 15px;
 	padding: 10px 15px;
 	font-size: 30px;
 }
-
-section .contenedor-productos {
+.contenedor-productos {
 	display: grid;
 	grid-template-columns: repeat(2,40%);
 	justify-content:center;
@@ -100,644 +124,419 @@ section .contenedor-productos {
 	text-align: center;
 	margin: 10px 5px ;
 }
-  
-section .contenedor-productos img {
+.contenedor-productos img {
     width: 60%;
     margin: 10px 0px 
-  }
-
-section.ayuda h1 {
+}
+.contenedor-alquiler p {
+	font-size: 16px;
+	margin: 0px 20px;
+}  
+.contenedor-alquiler h4{
+	font-size: 20px;
+}  
+.contenedor-productos p {
+	font-size: 16px;
+}  
+.contenedor-productos h4{
+	font-size: 20px;
+}  
+/*INDEX 3*/
+.ayuda h1 {
 	justify-content:  center;
 	margin: 25px 20px;
 	padding: auto;
 	text-align: center;
 	color: rgb(131, 201, 61);
 	font-size: 30px;
-  }
-section div.FAQ {
+}
+.FAQ {
    justify-content:  center;
    margin: 35px 25px;
    padding: 20px 15px;
 }  
-
-section div.FAQ h3 {
-	padding: 20px 15px ;
-
+.FAQ h3 {
+	padding: 20px 15px;
 }
-/* ----- ----- COLORCAR PARA BOTON WSSP----- ----- */
+.FAQ p{
+	margin-left: 40px;
+}
 .float{
-		position:fixed;
-		width:60px;
-		height:60px;
-		bottom:40px;
-		right:40px;
-		background-color:#25d366;
-		color:#FFF;
-		border-radius:50px;
-		text-align:center;
-		font-size:30px;
-		box-shadow: 2px 2px 3px #999;
-		z-index:100;
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index:100;
 }
 .float:hover {
-		text-decoration: none;
-		color: #25d366;
-		background-color:#fff;
-}
-	
+	text-decoration: none;
+	color: #25d366;
+	background-color:#fff;
+}	
 .my-float{
-		margin-top:16px;
-	}
-	
-    /* ----- ----- hASTA AQUI COLORCAR PARA BOTON WSSP----- ----- */
-
+	margin-top:16px;
+}
 footer{
-	background-color:rgb(131, 201, 61);
-	padding-top: 20px;
-	padding-bottom: 20px;
-	}
-
-footer h3.titulo {
+	background-color: #84c02a;
+	display: grid;
+  	grid-template-columns: repeat(2, 1fr);
+}
+.titulo2 {
 	color: black;
 	font-size: 140%;
 	padding: 15px 5px;
 	margin: 5px 5px;
 	left: 10%;
 	position: absolute;
-	}
-	
-div.contactame2 {
-	display: inline-block;
-	margin-top: 3%;
-	margin-left: 9%;
 }
-
-div.contactame2 img{
-	display: inline-block;
-	margin-top: 5%;
-	margin-left: 2%;
-	width: 5%;
+.tel{
+	display: block;
+	margin-top: 60px;
+	margin-left:70px;
+	margin-bottom: 0px;
+	padding: 0px;
 }
-div.contactame2 p{
-	display: inline-block;
-	/*margin-top: 2%;*/
-	/*margin-left: 2%;*/
-	font: 80%;
-	vertical-align: 40%;
+.tel p{
+	display: inline-flex;
+	padding-left: 50px;
+	padding-top: 5px;
+	align-items: center;
+	vertical-align: middle;
 }
-
-/*div.wssp {
-	margin-top: 1%;
-	padding-top: 1%;
-
-} */
-div.redes-sociales2 {
+.wssp{
+	display: block;
+	margin-top: 25px;
+	margin-left:70px;
+	margin-bottom: 50px;
+	padding: 0px;
+}
+.wssp p{
+	display: inline-flex;
+	padding-left: 50px;
+	padding-top: 5px;
+	align-items: center;
+	vertical-align: middle;
+}
+.logo1{
+	height: 50px;
+	width: 50px;
+}
+.redes-sociales2 {
 	justify-content: center;
-	text-align: center;
+	margin-top: 80px;
 	margin-bottom: 10px;
 	padding: 5px 0px;
-    left: 50%;
-    }
-		 
-div.redes-sociales2 a {
+}		 
+.redes-sociales2 a {
 	text-decoration: none;
 	padding-right: 20px;
 	text-align: center;
-	}
-img.logo2 {
+}
+.logo2 {
 	justify-content: center;
 	height: 50px;
 	width: 50px;
 	text-align: center;
-	}
-
-	/* ----- ----- MEDIA QUERIES ----- ----- */ /*RESPONSIVE*/
-@media screen and (max-width: 800px) {
-  
-header .menu {
-	background-color: black;
-	opacity: 100%;
-	margin-top:auto;
-	padding: 5px 0;
- }
- 
- header .menu a {
-	font-size: 7px;
-	font-weight: 100px;
-	display:grid;
-	margin: 5px 5px;
-	text-decoration: none;
-	text-align: left;
-    left: 30%;
-	padding: 3px 3px;
-	border-radius: 30px;
- }
-
- header .menu a:hover {
-	 background-color:rgb(132, 192, 42);
-	 color: #fff;
- }
- 
- .redes-sociales{
-	float: left;
-	top: 100px;
-	/*margin-top: -75px;*/
-	margin-left: 55%;
-	text-align: left;
- }
- .redes-sociales a{
-	text-decoration: none;
-	padding-left: 10px;
- }
- .logo{
-	height: 30px;
-	width: 30px;
- }
- 
- /* ----- ----- SECTION ----- ----- */
- 
- section h3#ALQUILER.titulo {
-  color: rgb(131, 201, 61);
-  text-align: center;
-  /*left: 40%;*/
-  margin-left: 30%;
- /* margin: 10px 0;
-  padding: 5px 15px;*/
-  font-size: 30px;
- }
- /* ----- ----- COLORCAR PARA BOTON WSSP----- ----- */
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	left: 70%;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-	font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-	z-index:100;
- }
-.float:hover {
-	text-decoration: none;
-	color: #25d366;
-	background-color:#fff;
- }
-	 
-.my-float{
-	margin-top:16px;
- }
-	 
-	 /* ----- ----- hASTA AQUI COLORCAR PARA BOTON WSSP----- ----- */
- 
- footer{
-	background-color:rgb(131, 201, 61);
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
- 
- footer h3.titulo {
-	color: black;
-	font-size: 120%;
-	padding: 5px 5px;
-	margin: -10px 20px;
-	left: 10%;
-	position: absolute;
-}
-	 
- footer div.contactame2 img {
-	/*top: 30%;*/
-	width: 2%;
-	display: inline-block;
-	margin: 14px 0px;
-	left: 10%;
-	padding: 0px;
-	margin-left: 2%;
-	 /*border-bottom: 1px;
-	 border-top: 1px;*/
-	/* position: relative;*/
-}
-	 
-footer div.contactame2 p {
-	/*top: 50%;*/
-	display: inline-block;
-	margin-top: 5%;
-	margin: 0px 9px;
-	left: 10%;
-	padding: 0px;
-	/*vertical-align: middle;*/
-	/*position: relative;*/
-}
-	 
- div.redes-sociales2 {
-	 justify-content: center;
-	 text-align: center;
-	 margin-bottom: 10px;
-	 padding: 5px 0px;
-	 left: 50%;
-	 }
-		  
- div.redes-sociales2 a {
-	 text-decoration: none;
-	 padding-right: 20px;
-	 text-align: center;
-	 }
- img.logo2 {
-	 justify-content: center;
-	 height: 50px;
-	 width: 50px;
-	 text-align: center;
-	 }
-}
-
-	/* ----- ----- MEDIA QUERIES ----- ----- */ /*RESPONSIVE*/
-@media screen and (max-width: 480px) {
-  
-header .menu {
-	background-color: black;
-	opacity: 100%;
-	margin-top:auto;
-	padding: 5px 0;
- }
- 
- header .menu a {
-	font-size: 7px;
-	font-weight: 100px;
-	display:grid;
-	margin: 5px 5px;
-	text-decoration: none;
-	text-align: left;
-    left: 30%;
-	padding: 3px 3px;
-	border-radius: 30px;
- }
-
- header .menu a:hover {
-	 background-color:rgb(132, 192, 42);
-	 color: #fff;
- }
- 
- .redes-sociales{
-	float: right;
-	/*top: 100px;*/
-	/*margin-top: -75px;*/
-	margin-left: 46%;
-	text-align: right;
-	position: fixed;
-	
-
- }
- .redes-sociales a{
-	text-decoration: none;
-	padding-left: 10px;
- }
- .logo{
-	height: 10px;
-	width: 10px;
- }
- 
- /* ----- ----- SECTION ----- ----- */
- 
- /*section h3#ALQUILER.titulo {
-  color: rgb(131, 201, 61);
-  text-align: center;
-  /*left: 40%;
-  margin-left: 0%;
- /* margin: 10px 0;
-  padding: 5px 15px;
-  font-size: 30px;
- }*/
- /* ----- ----- COLORCAR PARA BOTON WSSP----- ----- */
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	left: 65%;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-	font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-	z-index:100;
- }
-.float:hover {
-	text-decoration: none;
-	color: #25d366;
-	background-color:#fff;
- }
-	 
-.my-float{
-	margin-top:16px;
- }
-	 
-	 /* ----- ----- hASTA AQUI COLORCAR PARA BOTON WSSP----- ----- */
- 
- footer{
-	background-color:rgb(131, 201, 61);
-	padding-top: 30px;
-	padding-bottom: 30px;
-}
- 
- footer h3.titulo {
-	color: black;
-	font-size: 120%;
-	padding: 0px 0px;
-	margin: -10px 20px;
-	margin-left: 25%;
-	position: absolute;
-}
-	 
- footer div.contactame2 img {
-	/*top: 30%;*/
-	width: 4%;
-	display: inline-block;
-	margin: 10px;
-	left: 10%;
-	padding: 0px;
-	margin-left: 22%;
-	 /*border-bottom: 1px;
-	 border-top: 1px;*/
-	/* position: relative;*/
-}
-	 
-footer div.contactame2 p {
-	/*top: 50%;*/
-	display: inline-block;
-	/*margin-top: 5%;*/
-	margin: 0px;
-	margin-left: 0%;
-	/*left: 10%;*/
-	padding: 0px;
-	/*vertical-align: middle;*/
-	/*position: relative;*/
-}
-	 
- div.redes-sociales2 {
-	 justify-content: center;
-	 text-align: center;
-	 margin-bottom: 10px;
-	 padding: 20px;
-	 left: 50%;
-	 }
-		  
- div.redes-sociales2 a {
-	 text-decoration: none;
-	 padding-right: 20px;
-	 text-align: center;
-	 }
- img.logo2 {
-	 justify-content: center;
-	 height: 50px;
-	 width: 50px;
-	 text-align: center;
-	 }
-
 }
 
 
 @media screen and (max-width: 1440px) {
-  
+		.centro img{
+			margin: 0px;
+			width: 54%;
+		}
+		.centro h4{
+			margin-top: -6px;
+		}
+}
 
-    /* ----- ----- SECTION ----- ----- */
+@media screen and (max-width: 1024px) {
         
-section h3#ALQUILER.titulo {
-	color: rgb(131, 201, 61);
-	text-align: center;
-	margin: 25px 15px;
-	padding: 10px 15px;
-	font-size: 30px;
-   }
-   
-section .contenedor-alquiler {
-    display: grid;
-    grid-template-columns: repeat(3,30%);
-    justify-content:center;
-    grid-gap: 20px;
-    margin-left: 2%;
-    margin-left: 2%;
-    align-content: left;
-    font-size: 15px;
-    text-align: center;
-    margin: 5px 5px ;
-  }
-   
-section .contenedor-alquiler img {
-    width: 60%;
-    margin: 10px 0px 
-  }
-   
-   
-section h3#PRODUCTOS.titulo {
-   color: rgb(131, 201, 61);
-   text-align: center;
-   margin: 25px 15px;
-   padding: 10px 15px;
-   font-size: 30px;
-  }
-   
-section .contenedor-productos {
-    display: grid;
-    grid-template-columns: repeat(2,40%);
-    justify-content:center;
-    grid-gap: 60px;
-    margin-left: 2%;
-    margin-left: 2%;
-    align-content: center;
-    font-size: 15px;
-    text-align: center;
-    margin: 10px 5px ;
-  }
-     
-section .contenedor-productos img {
-    width: 60%;
-    margin: 10px 0px 
-  }
-        /* ----- ----- COLORCAR PARA BOTON WSSP----- ----- */
-   
-            /* ----- ----- hASTA AQUI COLORCAR PARA BOTON WSSP----- ----- */
-        
-    footer{
-       background-color:rgb(131, 201, 61);
-       padding-top: 30px;
-       padding-bottom: 30px;
-   }
-        
-    footer h3.titulo {
-       color: black;
-       font-size: 120%;
-       padding: 5px 5px;
-       margin: -10px 20px;
-       left: 10%;
-       position: absolute;
-   }
-        
-    footer div.contactame2 img {
-       /*top: 30%;*/
-       width: 3%;
-       display: inline-block;
-       margin: 14px 0px;
-       left: 10%;
-       padding: 0px;
-       margin-left: 2%;
-        /*border-bottom: 1px;
-        border-top: 1px;*/
-       /* position: relative;*/
-   }
-            
-   footer div.contactame2 p {
-       /*top: 50%;*/
-       display: inline-block;
-       margin-top: 5%;
-       margin: 0px 9px;
-       left: 10%;
-       padding: 0px;
-       /*vertical-align: middle;*/
-       /*position: relative;*/
-   }
-        
-    div.redes-sociales2 {
-       justify-content: center;
-       text-align: center;
-       margin-bottom: 10px;
-       padding: 5px 0px;
-       left: 50%;
-   }
-                 
-    div.redes-sociales2 a {
-       text-decoration: none;
-       padding-right: 20px;
-       text-align: center;
-       }
-   img.logo2 {
-       justify-content: center;
-       height: 50px;
-       width: 50px;
-       text-align: center;
-    }
-   
-@media screen and (max-width: 1000px) {
+		#ALQUILER{
+			color: rgb(131, 201, 61);
+			text-align: center;
+			margin: 25px 0px;
+			padding: 10px 0px;
+			font-size: 30px;
+		}   
+		.contenedor-alquiler {
+			display: grid;
+			grid-template-columns: repeat(3,30%);
+			justify-content:center;
+			grid-gap: 20px;
+			margin-left: 2%;
+			margin-left: 2%;
+			align-content: left;
+			font-size: 15px;
+			text-align: center;
+			margin: 5px 5px ;
+		}		   
+		.contenedor-alquiler img {
+			width: 60%;
+			margin: 10px 0px 
+		} 
+		.centro img{
+			margin: 0px;
+			width: 54%;
+		}
+		.centro p{
+			padding-top: 5px;
+		}
+		.centro h4{
+			margin-top: -6px;
+		} 
+		#PRODUCTOS{
+		   color: rgb(131, 201, 61);
+		   text-align: center;
+		   margin: 25px 15px;
+		   padding: 10px 15px;
+		   font-size: 30px;
+		}	   
+		.contenedor-productos {
+			display: grid;
+			grid-template-columns: repeat(2,40%);
+			justify-content:center;
+			grid-gap: 60px;
+			margin-left: 2%;
+			margin-left: 2%;
+			align-content: center;
+			font-size: 15px;
+			text-align: center;
+			margin: 10px 5px ;
+		}	 
+		.contenedor-productos img {
+			width: 60%;
+			margin: 10px 0px 
+		}
+}
+
+@media screen and (max-width: 800px) {
   
-header .menu {
-	background-color: black;
-	opacity: 100%;
-	margin-top:auto;
-	padding: 5px 0;
-}
+	.navbar-dark .navbar-toggler {
+		color: rgba(255,255,255,.55);
+		border-color: rgba(255,255,255,.1);
+	}  
+	.nav-item a {
+	  display: block;
+	  text-align: center;
+	  min-width: 125px;
+	}
+	&.active .nav-item a {
+	  background: #333;
+	  border-width: 1px;
+	}
+	.redes-sociales a{
+		visibility: hidden;
+	}
+	.float{
+		width:40px;
+		height:40px;
+	}
+	.float:hover {
+		text-decoration: none;
+		color: #25d366;
+		background-color:#fff;
+	}
+	.my-float{
+		margin-top:-4px;
+		justify-content: center;
+	}
+	.contenedor-alquiler {
+		display: grid;
+		grid-template-columns: repeat(3,30%);
+		justify-content:center;
+		grid-gap: 20px;
+		margin-left: 2%;
+		margin-left: 2%;
+		align-content: left;
+		text-align: center;
+		margin: 5px 5px ;
+	}
+	.contenedor-alquiler p{
+		font-size: 16px;
+	}
+	.contenedor-alquiler h4{
+		font-size: 18px;
+	}
+	.centro p{
+		padding-top: 0px;
+	}
+	.contenedor-alquiler .centro img{
+		width: 66%;
+		padding: 0px;
+	}  
+	.centro h4{
+		padding-bottom: 0px;
+	}
+	.contenedor-alquiler img {
+		width: 70%;
+		margin: 10px 0px 
+	}  
+	#PRODUCTOS{
+	   color: rgb(131, 201, 61);
+	   text-align: center;
+	   margin: 25px 15px;
+	   padding: 10px 15px;
+	   font-size: 30px;
+	  }
+	   
+	.contenedor-productos {
+		display: grid;
+		grid-template-columns: repeat(2,40%);
+		justify-content:center;
+		grid-gap: 60px;
+		margin-left: 2%;
+		margin-left: 2%;
+		align-content: center;
+		font-size: 15px;
+		text-align: center;
+		margin: 10px 5px ;
+	  }
 		 
-header .menu a {
-	font-size: 7px;
-    font-weight: 100px;
-	display:grid;
-	margin: 5px 5px;
-	text-decoration: none;
-	text-align: left;
-	left: 30%;
-	padding: 3px 3px;
-	border-radius: 30px;
- }
-		
-header .menu a:hover {
-    background-color:rgb(132, 192, 42);
-	color: #fff;
+	.contenedor-productos img {
+		width: 60%;
+		margin: 10px 0px 
+	}
+	.titulo2 {
+		text-align: center;
+		margin:0%;
+		margin-bottom: 20px;
+		left: 18%;
+	}
+	.wssp{
+		margin-top: 5px;
+	}
+	.logo1{
+		height: 30px;
+		width: 30px;
+	}
+	.logo2{
+		height: 40px;
+		width: 40px;
+	}
+
 }
-	
- /* ----- ----- SECTION ----- ----- */
-		 
- section h3#ALQUILER.titulo {
-   color: rgb(131, 201, 61);
-   text-align: center;
-		  /*left: 40%;*/
-   margin-left: 30%;
-		 /* margin: 10px 0;
-		  padding: 5px 15px;*/
-  font-size: 30px;
- }
-		 /* ----- ----- COLORCAR PARA BOTON WSSP----- ----- */
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	left: 70%;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-	font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-	z-index:100;
- }
-.float:hover {
-	text-decoration: none;
-	color: #25d366;
-	background-color:#fff;
- }
-			 
-.my-float{
-	margin-top:16px;
- }
-			 
-	 /* ----- ----- hASTA AQUI COLORCAR PARA BOTON WSSP----- ----- */
-		 
-footer{
-	background-color:rgb(131, 201, 61);
-	padding-top: 30px;
-	padding-bottom: 30px;
+
+@media screen and (max-width: 480px) {
+	.navbar-dark .navbar-toggler {
+		color: rgba(255,255,255,.55);
+		border-color: rgba(255,255,255,.1);
+	}  
+	.nav-item a {
+	  display: block;
+	  text-align: center;
+	  min-width: 125px;
+	}
+	&.active .nav-item a {
+	  background: #333;
+	  border-width: 1px;
+	}
+	.redes-sociales a{
+		visibility: hidden;
+	}
+	.float{
+		width:40px;
+		height:40px;
+	}
+	.float:hover {
+		text-decoration: none;
+		color: #25d366;
+		background-color:#fff;
+	}
+	.my-float{
+		margin-top:-4px;
+		justify-content: center;
+	}
+	#ALQUILER {
+		text-align: center;
+	}
+	.contenedor-alquiler {
+		display: grid;
+		grid-template-columns: repeat(1,1fr);
+	}
+	.contenedor-alquiler h4{
+		margin-bottom: 0px;
+		font-size: 18px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.contenedor-alquiler p{
+		font-size: 14px;
+		margin-left: 50px;
+		margin-right: 50px;
+		margin-bottom: 15px;
+	}
+	.contenedor-alquiler img{
+		width: 50%;
+		margin: 15px 0px;
+		padding: 0px;
+	}
+	.contenedor-alquiler .centro img{
+		width: 47%;
+		padding: 0px;
+	}  
+	.contenedor-productos {
+		display: grid;
+		grid-template-columns: repeat(1,1fr);
+	}
+
+	.contenedor-productos img{
+		width: 50%;
+		margin: 15px 0px;
+		padding: 0px;
+	}
+	.contenedor-productos p{
+		font-size: 14px;
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+   .contenedor-productos h4{
+	margin-bottom: 0px;
+	font-size: 18px;
+	margin-left: 15px;
+	margin-right: 15px;
+   }
+   footer{
+	display: grid;
+  	grid-template-columns: repeat(1, 1fr);
+	}
+	.logo1{
+	height: 30px;
+	width: 30px;
+	}
+	.contactame2{
+	margin-left: 50px;
+	}
+	.titulo2 {
+		text-align: center;
+		margin:0%;
+		margin-bottom: 20px;
+		left: 40%;
+	}
+	.wssp{
+		margin-top: 10px;
+	}
+	.redes-sociales2 {
+		justify-items: center;
+		margin-top: 0px;
+		margin-bottom: 10px;
+		margin-left: 170px;
+		padding: 5px 0px;
+	}
+	.logo2{
+		width: 40px;
+		height: 40px;
+	}
+	.FAQ h3 {
+		padding: 20px 15px;
+		text-align: center;
+	}
 }
-		 
-footer h3.titulo {
-	color: black;
-	font-size: 120%;
-	padding: 5px 5px;
-	margin: -10px 20px;
-	left: 10%;
-	position: absolute;
-}
-			 
-footer div.contactame2 img {
-		/*top: 30%;*/
-	width: 2%;
-	display: inline-block;
-	margin: 14px 0px;
-	left: 10%;
-	padding: 0px;
-	margin-left: 2%;
-			 /*border-bottom: 1px;
-			 border-top: 1px;*/
-			/* position: relative;*/
- }
-			 
-footer div.contactame2 p {
-			/*top: 50%;*/
-	display: inline-block;
-	margin-top: 5%;
-	margin: 0px 9px;
-	left: 10%;
-	padding: 0px;
-			/*vertical-align: middle;*/
-			/*position: relative;*/
- } 
-			 
- div.redes-sociales2 {
-    justify-content: center;
-	text-align: center;
-	margin-bottom: 10px;
-	padding: 5px 0px;
-	left: 50%;
- }
-				  
- div.redes-sociales2 a {
-    text-decoration: none;
-	padding-right: 20px;
-	text-align: center;
-}
- img.logo2 {
-    justify-content: center;
-	height: 50px;
-	width: 50px;
-	text-align: center; }
- }
+
