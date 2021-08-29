@@ -82,15 +82,15 @@ nav {
 	text-align: center;
 	color:black;
 	font-size: 40px;
-	padding: 20px;
-	margin-top: 30px;
+	padding: 10px;
+	margin-top: 20px;
 }
 .carousel-inner img {
     width: 100%;
     max-height: 480px;
 }
 .carousel-inner{
- height: 450px;
+ height: 360px;
 }
 .main .sobre-nosotros .contenedor {
 	overflow: visible;
@@ -505,20 +505,22 @@ footer {
 	  border-width: 1px;
 	}
 	.presentacion{
-		text-align: center;
-		color:black;
-		font-size: 30px;
-		padding: 20px;
-		text-align: center;
-		margin-left: 20px;
-		margin top: 0;
+		margin-top: -60%;
 	}
 	.redes-sociales a{
 		visibility: hidden;
 	}
-	h1.presentacion {
-		margin-top: -30%;
-	}
+	
+	/*.carousel-inner{
+		height: 400px;
+	   }*/
+
+	.presentacion {
+		font-size: 30px;
+		padding: 10px;
+		margin-top: -20%;
+	}   
+
 	.main .sobre-nosotros p {
 		margin: 50px;
 	}
@@ -626,16 +628,70 @@ footer {
 	  border-width: 1px;
 	}
 
-	.presentacion{
-		text-align: center;
-		color:black;
-		font-size: 30px;
-		padding: 20px;
-		text-align: center;
-		margin-left: 20px;
-		margin top: 0;
+	.carousel-inner {
+		height: 200px;
+	}*/
+		/*.carousel-inner{
+		height: 400px;
+	   }*/
+
+    .presentacion {
+		font-size: 25px;
+		padding: 0px;
+		margin-top: -30%;
+		/*top: 60%;*/
+	}   
+  	.float{
+		width:40px;
+		height:40px;
+		top: 75%;
 	}
-	.float{
+	.float:hover {
+		text-decoration: none;
+		color: #25d366;
+		background-color:#fff;
+	}
+	.my-float{
+		margin-top:-4px;
+		justify-content: center;
+	}
+	iframe{
+		width: 250px;
+		height: 300px;
+		margin-left: 30px;
+	}
+}
+
+@media only screen and (max-width: 375px){
+	.navbar-dark .navbar-toggler {
+		color: rgba(255,255,255,.55);
+		border-color: rgba(255,255,255,.1);
+	}  
+	.nav-item a {
+	  display: block;
+	  text-align: center;
+	  min-width: 125px;
+	}
+	
+	.active .nav-item a {
+	  background: #333;
+	  border-width: 1px;
+	}
+
+	.carousel-inner {
+		height: 300px;
+	}
+		/*.carousel-inner{
+		height: 400px;
+	   }*/
+
+    .presentacion {
+		font-size: 25px;
+		padding: 10px;
+		margin-top: -10%;
+		justify-content: center;
+	}   
+  	.float{
 		width:40px;
 		height:40px;
 	}
