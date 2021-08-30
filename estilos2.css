@@ -225,8 +225,8 @@ footer{
 	vertical-align: middle;
 }
 .logo1{
-	height: 50px;
-	width: 50px;
+	height: 30px;
+	width: 30px;
 }
 .redes-sociales2 {
 	justify-content: center;
@@ -521,22 +521,25 @@ footer{
 		justify-content: center;
 		margin-left: 0px;
 	}
+	.tel p{
+		padding-left: 15px;
+	}
 	.wssp{
 		text-align: center;
 		justify-content: center;
-		margin-top: 10px;
+		margin-top: 0px;
 		margin-left: 35px;
 		margin-bottom: 30px;
 	}
 	.wssp p{
-		padding-left: 20px;
+		padding-left: 10px;
 	}
 	.titulo2 {
 		text-align: center;
 		justify-content: center;
 		margin:0%;
 		margin-bottom: 20px;
-		left: 40%;
+		left: 38%;
 	}
 	.redes-sociales2 {
 		justify-items: center;
