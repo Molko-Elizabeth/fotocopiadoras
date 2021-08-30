@@ -193,7 +193,7 @@ footer{
 	font-size: 140%;
 	padding: 15px 5px;
 	margin: 5px 5px;
-	left: 5%;
+	left: 10%;
 	position: absolute;
 }
 .tel{
@@ -203,21 +203,12 @@ footer{
 	margin-bottom: 0px;
 	padding: 0px;
 }
-
-.tel img {
-	width: 5%;
-	height: 5%;
-	margin-top: -10px;
-
-}
 .tel p{
 	display: inline-flex;
 	padding-left: 30px;
 	padding-top: 5px;
 	align-items: center;
 	vertical-align: middle;
-	/*margin-top: 10px;*/
-	padding: 0px 5px;
 }
 .wssp{
 	display: block;
@@ -226,17 +217,10 @@ footer{
 	margin-bottom: 50px;
 	padding: 0px;
 }
-
-.wssp img {
-	width: 5%;
-	height: 5%;
-	margin-top: -10px;
-}
 .wssp p{
 	display: inline-flex;
 	padding-left: 30px;
 	padding-top: 5px;
-	padding: 0px 5px;
 	align-items: center;
 	vertical-align: middle;
 }
@@ -346,7 +330,7 @@ footer{
 	  text-align: center;
 	  min-width: 125px;
 	}
-	.active .nav-item a {
+	&.active .nav-item a {
 	  background: #333;
 	  border-width: 1px;
 	}
@@ -440,41 +424,6 @@ footer{
 		height: 40px;
 		width: 40px;
 	}
-	.tel img {
-		width: 10%;
-		height: 10%;
-		margin-top: 0px;
-	}
-	.tel p{
-		display: inline-flex;
-		padding-left: 30px;
-		padding-top: 5px;
-		align-items: center;
-		vertical-align: middle;
-		margin-top: 10px;
-	}
-	.wssp{
-		display: block;
-		margin-top: 10px;
-		margin-left:70px;
-		margin-bottom: 50px;
-		padding: 0px;
-	}
-	
-	.wssp img {
-		width: 10%;
-		height: 10%;
-		margin-top: 0px;
-	}
-	
-	.wssp p{
-		display: inline-flex;
-		padding-left: 30px;
-		padding-top: 5px;
-		align-items: center;
-		vertical-align: middle;
-		margin-top: 10px;
-		}	
 
 }
 
@@ -488,7 +437,7 @@ footer{
 	  text-align: center;
 	  min-width: 125px;
 	}
-	.active .nav-item a {
+	&.active .nav-item a {
 	  background: #333;
 	  border-width: 1px;
 	}
@@ -565,21 +514,34 @@ footer{
 	width: 30px;
 	}
 	.contactame2{
-	margin-left: 50px;
+	justify-content: center;
+	}
+	.tel{
+		text-align: center;
+		justify-content: center;
+		margin-left: 0px;
+	}
+	.wssp{
+		text-align: center;
+		justify-content: center;
+		margin-top: 10px;
+		margin-left: 35px;
+		margin-bottom: 30px;
+	}
+	.wssp p{
+		padding-left: 20px;
 	}
 	.titulo2 {
 		text-align: center;
 		justify-content: center;
 		margin:0%;
 		margin-bottom: 20px;
-		left: 35%;
-	}
-	.wssp{
-		margin-top: 10px;
+		left: 40%;
 	}
 	.redes-sociales2 {
 		justify-items: center;
 		text-align: center;
+		justify-items: center;
 		margin-top: 0px;
 		margin-bottom: 10px;
 		padding: 5px 0px;
@@ -588,34 +550,9 @@ footer{
 		width: 40px;
 		height: 40px;
 	}
-	.FAQ h3 {
-		padding: 20px 15px;
+	.FAQ h3{
+		padding: 20px 0px;
 		text-align: center;
 	}
-
-	.tel img {
-		width: 8%;
-		height: 8%;
-		top: 0%;
-	}
-	.tel p{
-		display: inline-flex;
-		padding-left: 30px;
-		padding-top: 5px;
-		align-items: center;
-		vertical-align: middle;
-	}
-	.wssp{
-		display: block;
-		margin-top: 25px;
-		margin-left:70px;
-		margin-bottom: 50px;
-		padding: 0px;
-	}
-	
-	.wssp img {
-		width: 8%;
-		height: 8%;
-		top: 0%;
 }
 
