@@ -191,42 +191,46 @@ footer{
 .titulo2 {
 	color: black;
 	font-size: 140%;
-	padding: 15px 5px;
-	margin: 5px 5px;
-	left: 10%;
+	padding: 10px 5px;
+	margin: 5px 0px;
+	left: 7%;
 	position: absolute;
 }
 .tel{
 	display: block;
-	margin-top: 60px;
+	margin-top: 70px;
 	margin-left:70px;
 	margin-bottom: 0px;
 	padding: 0px;
 }
 .tel p{
 	display: inline-flex;
-	padding-left: 30px;
-	padding-top: 5px;
+	padding-left: 5px;
+	/*padding-top: 5px;*/
 	align-items: center;
 	vertical-align: middle;
 }
 .wssp{
 	display: block;
-	margin-top: 25px;
+	margin-top: 5px;
 	margin-left:70px;
 	margin-bottom: 50px;
 	padding: 0px;
 }
 .wssp p{
 	display: inline-flex;
-	padding-left: 30px;
-	padding-top: 5px;
+	padding-left: 5px;
+	/*padding-top: 5px;*/
+	padding: 0px;
+	margin-top: -5px;
 	align-items: center;
 	vertical-align: middle;
 }
 .logo1{
 	height: 30px;
 	width: 30px;
+	margin-top: -15px;
+	
 }
 .redes-sociales2 {
 	justify-content: center;
