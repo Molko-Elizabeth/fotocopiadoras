@@ -416,7 +416,7 @@ footer{
 		text-align: center;
 		margin:0%;
 		margin-bottom: 20px;
-		left: 15%;
+		left: 10%;
 	}
 	.wssp{
 		margin-top: 5px;
@@ -544,7 +544,14 @@ footer{
 		justify-content: center;
 		margin:0%;
 		margin-bottom: 20px;
-		left: 38%;
+		left: 35%;
+	}
+
+	.logo1{
+		height: 25px;
+		width: 25px;
+		margin-left: -20px;
+		
 	}
 	.redes-sociales2 {
 		justify-items: center;
@@ -564,3 +571,13 @@ footer{
 	}
 }
 
+@media screen and (max-width: 480px) {
+	.titulo2 {
+		text-align: center;
+		justify-content: center;
+		margin:0%;
+		margin-bottom: 20px;
+		left: 30%;
+	}
+
+}
