@@ -6,7 +6,7 @@ $email = $_POST['email'];
 $comentarios = $_POST['comentarios'];
  //mail a mi mail
  mail(
-     "maguigareal@gmail.com",
+     "info@ricopier.net",
      "mail desde web.com",
      "$nombre te envio $comentario contactalo a $email",
     "from:super sitio <info@superweb.com>"
@@ -25,7 +25,7 @@ $comentarios = $_POST['comentarios'];
 
 // destinatario / asunto / cuerpo --- mandar x post
 /*mail(
-    "maguigareal@gmail.com",
+    "info@ricopier.net",
     "Probando form",
     "Este es el mensaje",
     "from:super sitio <info@superweb.com>"
