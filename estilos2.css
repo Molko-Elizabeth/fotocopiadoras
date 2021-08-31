@@ -335,7 +335,7 @@ footer{
 	  text-align: center;
 	  min-width: 125px;
 	}
-	&.active .nav-item a {
+	.active .nav-item a {
 	  background: #333;
 	  border-width: 1px;
 	}
@@ -442,7 +442,7 @@ footer{
 	  text-align: center;
 	  min-width: 125px;
 	}
-	&.active .nav-item a {
+	.active .nav-item a {
 	  background: #333;
 	  border-width: 1px;
 	}
