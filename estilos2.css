@@ -209,6 +209,7 @@ footer{
 	/*padding-top: 5px;*/
 	align-items: center;
 	vertical-align: middle;
+	margin-top: -5px;
 }
 .wssp{
 	display: block;
@@ -219,7 +220,7 @@ footer{
 }
 .wssp p{
 	display: inline-flex;
-	padding-left: 5px;
+	padding-left: 12px;
 	/*padding-top: 5px;*/
 	padding: 0px;
 	margin-top: -5px;
@@ -227,8 +228,8 @@ footer{
 	vertical-align: middle;
 }
 .logo1{
-	height: 30px;
-	width: 30px;
+	height: 25px;
+	width: 25px;
 	margin-top: -15px;
 	
 }
