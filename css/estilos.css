@@ -221,7 +221,6 @@ iframe{
 	font-size: 100%;
 	color: 	rgb(132, 192, 42);
 	align-items: center;
-	vertical-align: middle;
 	padding-left: 100px;
 	margin-top: -70px;
 }
@@ -448,10 +447,11 @@ footer {
 		visibility: hidden;
 	}
 	iframe{
-		float: right;
+		float: left;
 		grid-column: 1 / 1;
 		margin-right: 100px;
 		margin-top: -400px;
+		margin-left: 12%;
 		width: 600px;
 		height: 500px;
 	}
@@ -553,7 +553,7 @@ footer {
 		grid-column: 1 / 1;
 		margin-right: 0px;
 		margin-top: -400px;
-		margin-left: 70px;
+		margin-left: 40px;
 		width: 350px;
 		height: 300px;
 	}
@@ -656,11 +656,15 @@ footer {
 		margin-left: 50px;
 	}
 	iframe{
-		width: 100px;
-		height: 100px;
-		margin-left: 0px;
+		float: left;
+		grid-column: 1 / 1;
 		margin-right: 0px;
+		margin-top: -400px;
+		margin-left: 45px;
+		width: 300px;
+		height: 250x;
 	}
+			
 }
 
 @media only screen and (max-width: 320px){
@@ -700,9 +704,12 @@ footer {
 		justify-content: center;
 	}
 	iframe{
-		width: 100px;
-		height: 100px;
-		margin-left: 0px;
+		float: left;
+		grid-column: 1 / 1;
 		margin-right: 0px;
+		margin-top: -400px;
+		margin-left: 40px;
+		width: 250px;
+		height: 200x;
 	}
 }
