@@ -258,7 +258,7 @@ iframe{
 	width: 50%;
 	font-size: 15px;
 }
-.formulario textarea#message.input {
+.formulario textarea#mensaje.input {
 	background-color: rgb(208, 202, 202);
 	color: black;
 	border-radius: 20px;
@@ -266,7 +266,7 @@ iframe{
 	width: 50%;
 	font-size: 15px;
 }
-.formulario .message {
+.formulario .mensaje {
 	color: 	rgb(132, 192, 42);
 }
 .formulario input#submit_button {

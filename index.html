@@ -44,10 +44,10 @@
                     <a style="color: #84c02a;" href="#contacto" class="nav-link">CONTACTO</a>
                   </li>
                   <li class="nav-item">
-                    <a style="color: #84c02a;" href="index2.html" class="nav-link">SERVICIOS</a>
+                    <a style="color: #84c02a;" href="Servicios.html" class="nav-link">SERVICIOS</a>
                   </li>
                   <li class="nav-item">
-                    <a style="color: #84c02a;" href="index3.html" class="nav-link">AYUDA</a>
+                    <a style="color: #84c02a;" href="FAQ.html" class="nav-link">AYUDA</a>
                   </li>
                 </ul>
                 <div class="contenedor">
@@ -129,33 +129,31 @@
             
             <section class="formulario" id="formulario">
                 <h3 class="titulo" id="envianos">ENVIANOS TU CONSULTA</h3>
-                <div id="after_submit">
-                    <form id="contact_form" action="prueba.php" method="post" enctype="multipart/form-data">
+                    <form id="contact_form" action="contacto.php" method="post" enctype="multipart/form-data">
                     <div class="fila">
-                        <label class="required" for="name">Nombre:</label><br />
-                        <input id="name" class="input" name="name" type="text" value="" size="30"/><br/>
-                        <span id="name_validation" class="error_message"></span>
+                      <label class="required" for="name">Nombre:</label><br />
+                      <input id="name" class="input" name="name" type="text" value="" size="30"/><br/>
+                      <span id="name_validation" class="error_mensaje"></span>
                     </div>
-                    </form>  
+                <div class="fila">
+                      <label class="required" for="email">E-mail:</label><br/>
+                      <input id="email" class="input" name="email" type="text" value="" size="30" /><br/>
+                      <span id="email_validation" class="error_mensaje"></span>
                 </div>
                 <div class="fila">
-                        <label class="required" for="email">E-mail:</label><br/>
-                        <input id="email" class="input" name="email" type="text" value="" size="30" /><br/>
-                        <span id="email_validation" class="error_message"></span>
+                  <label class="required" for="mensaje">Mensaje:</label><br/>
+                  <textarea id="mensaje" class="input" name="mensaje" rows="7" cols="30"></textarea><br/>
+                  <span id="mensaje_validation" class="error_mensaje"></span>
                 </div>
-                <div class="fila">
-                        <label class="required" for="message">Mensaje:</label><br/>
-                        <textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br/>
-                        <span id="message_validation" class="error_message"></span>
-                </div>
-                    <input id="submit_button" type="submit" value="Enviar" />
-            </section> 
-            <section>
+                    <input id="submit_button" type="submit" value="Enviar" data-submit="Enviar"/>
+                </form> 
+              <section>
                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
                 <a href="https://api.whatsapp.com/send?phone=5493416808485&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20fotocopiadoras%20Gracias!." aria-label="Contactanos por Whatsapp" class="float" target="_blank">
                     <i class="fa fa-whatsapp my-float" aria-hidden="true"></i>
                 </a>
-            </section>
+              </section>
+          </section>  
     </main> 
     <footer>
         <div class="contenedor">
